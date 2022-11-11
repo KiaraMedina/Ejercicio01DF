@@ -11,7 +11,7 @@
 			"type": "string",
 			"defaultValue": "https://KVejercicio1.vault.azure.net/"
 		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
+		"lnk_adlsgen2_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://castoragecount.dfs.core.windows.net/"
 		}
@@ -34,14 +34,14 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureDataLakeStorage1')]",
+			"name": "[concat(parameters('factoryName'), '/lnk_adlsgen2')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
 				"type": "AzureBlobFS",
 				"typeProperties": {
-					"url": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]",
+					"url": "[parameters('lnk_adlsgen2_properties_typeProperties_url')]",
 					"accountKey": {
 						"type": "AzureKeyVaultSecret",
 						"store": {
