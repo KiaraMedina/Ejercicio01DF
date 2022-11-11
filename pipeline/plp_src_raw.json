@@ -1,0 +1,1314 @@
+{
+	"name": "plp_src_raw",
+	"properties": {
+		"activities": [
+			{
+				"name": "vgPlayer_src_raw",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "FileServerReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "ParquetSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "sofifa_id",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "sofifa_id",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "player_url",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "player_url",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "short_name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "short_name",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "long_name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "long_name",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "age",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "age",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "dob",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dob",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "height_cm",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "height_cm",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "weight_kg",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "weight_kg",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "nationality",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "nationality",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "club",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "club",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "overall",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "overall",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "potential",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "potential",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "value_eur",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "value_eur",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "wage_eur",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "wage_eur",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "player_positions",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "player_positions",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "preferred_foot",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "preferred_foot",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "international_reputation",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "international_reputation",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "weak_foot",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "weak_foot",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "skill_moves",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "skill_moves",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "work_rate",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "work_rate",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "body_type",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "body_type",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "real_face",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "real_face",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "release_clause_eur",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "release_clause_eur",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "player_tags",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "player_tags",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "team_position",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "team_position",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "team_jersey_number",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "team_jersey_number",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "loaned_from",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "loaned_from",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "joined",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "joined",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "contract_valid_until",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "contract_valid_until",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "nation_position",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "nation_position",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "nation_jersey_number",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "nation_jersey_number",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "pace",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "pace",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "shooting",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "shooting",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "passing",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "passing",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "dribbling",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dribbling",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "defending",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "defending",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "physic",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "physic",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "gk_diving",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "gk_diving",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "gk_handling",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "gk_handling",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "gk_kicking",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "gk_kicking",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "gk_reflexes",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "gk_reflexes",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "gk_speed",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "gk_speed",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "gk_positioning",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "gk_positioning",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "player_traits",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "player_traits",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "attacking_crossing",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "attacking_crossing",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "attacking_finishing",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "attacking_finishing",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "attacking_heading_accuracy",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "attacking_heading_accuracy",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "attacking_short_passing",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "attacking_short_passing",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "attacking_volleys",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "attacking_volleys",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "skill_dribbling",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "skill_dribbling",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "skill_curve",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "skill_curve",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "skill_fk_accuracy",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "skill_fk_accuracy",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "skill_long_passing",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "skill_long_passing",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "skill_ball_control",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "skill_ball_control",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "movement_acceleration",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "movement_acceleration",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "movement_sprint_speed",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "movement_sprint_speed",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "movement_agility",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "movement_agility",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "movement_reactions",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "movement_reactions",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "movement_balance",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "movement_balance",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "power_shot_power",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "power_shot_power",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "power_jumping",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "power_jumping",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "power_stamina",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "power_stamina",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "power_strength",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "power_strength",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "power_long_shots",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "power_long_shots",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "mentality_aggression",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "mentality_aggression",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "mentality_interceptions",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "mentality_interceptions",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "mentality_positioning",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "mentality_positioning",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "mentality_vision",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "mentality_vision",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "mentality_penalties",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "mentality_penalties",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "mentality_composure",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "mentality_composure",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "defending_marking",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "defending_marking",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "defending_standing_tackle",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "defending_standing_tackle",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "defending_sliding_tackle",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "defending_sliding_tackle",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "goalkeeping_diving",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "goalkeeping_diving",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "goalkeeping_handling",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "goalkeeping_handling",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "goalkeeping_kicking",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "goalkeeping_kicking",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "goalkeeping_positioning",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "goalkeeping_positioning",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "goalkeeping_reflexes",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "goalkeeping_reflexes",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "ls",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ls",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "st",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "st",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "rs",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "rs",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "lw",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lw",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "lf",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lf",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "cf",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "cf",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "rf",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "rf",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "rw",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "rw",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "lam",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lam",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "cam",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "cam",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "ram",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ram",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "lm",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lm",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "lcm",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lcm",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "cm",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "cm",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "rcm",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "rcm",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "rm",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "rm",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "lwb",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lwb",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "ldm",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ldm",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "cdm",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "cdm",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "rdm",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "rdm",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "rwb",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "rwb",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "lb",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lb",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "lcb",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lcb",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "cb",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "cb",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "rcb",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "rcb",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "rb",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "rb",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "srcPlayer_csv",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "adcls_raw",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}

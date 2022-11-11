@@ -1,0 +1,19 @@
+{
+	"name": "adls_universal",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lnk_adlsgen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "universal"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
