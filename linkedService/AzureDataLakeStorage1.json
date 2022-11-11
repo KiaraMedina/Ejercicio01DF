@@ -1,0 +1,18 @@
+{
+	"name": "AzureDataLakeStorage1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://castoragecount.dfs.core.windows.net/",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "lnk_ejercicio01",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "keysecret"
+			}
+		}
+	}
+}
