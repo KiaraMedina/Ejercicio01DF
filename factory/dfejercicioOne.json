@@ -1,0 +1,9 @@
+{
+	"name": "dfejercicioOne",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b5ca08be-ebd4-434d-8df4-2959478c9dca",
+		"tenantId": "a3825ce2-adf2-47a8-bfd8-f065e100275b"
+	}
+}
