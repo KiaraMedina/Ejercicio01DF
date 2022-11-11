@@ -1,0 +1,6 @@
+{
+	"name": "onPremitegrationRuntime",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
