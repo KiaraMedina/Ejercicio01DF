@@ -1,0 +1,439 @@
+{
+	"name": "srcPlayer_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "players_20.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "sofifa_id",
+				"type": "String"
+			},
+			{
+				"name": "player_url",
+				"type": "String"
+			},
+			{
+				"name": "short_name",
+				"type": "String"
+			},
+			{
+				"name": "long_name",
+				"type": "String"
+			},
+			{
+				"name": "age",
+				"type": "String"
+			},
+			{
+				"name": "dob",
+				"type": "String"
+			},
+			{
+				"name": "height_cm",
+				"type": "String"
+			},
+			{
+				"name": "weight_kg",
+				"type": "String"
+			},
+			{
+				"name": "nationality",
+				"type": "String"
+			},
+			{
+				"name": "club",
+				"type": "String"
+			},
+			{
+				"name": "overall",
+				"type": "String"
+			},
+			{
+				"name": "potential",
+				"type": "String"
+			},
+			{
+				"name": "value_eur",
+				"type": "String"
+			},
+			{
+				"name": "wage_eur",
+				"type": "String"
+			},
+			{
+				"name": "player_positions",
+				"type": "String"
+			},
+			{
+				"name": "preferred_foot",
+				"type": "String"
+			},
+			{
+				"name": "international_reputation",
+				"type": "String"
+			},
+			{
+				"name": "weak_foot",
+				"type": "String"
+			},
+			{
+				"name": "skill_moves",
+				"type": "String"
+			},
+			{
+				"name": "work_rate",
+				"type": "String"
+			},
+			{
+				"name": "body_type",
+				"type": "String"
+			},
+			{
+				"name": "real_face",
+				"type": "String"
+			},
+			{
+				"name": "release_clause_eur",
+				"type": "String"
+			},
+			{
+				"name": "player_tags",
+				"type": "String"
+			},
+			{
+				"name": "team_position",
+				"type": "String"
+			},
+			{
+				"name": "team_jersey_number",
+				"type": "String"
+			},
+			{
+				"name": "loaned_from",
+				"type": "String"
+			},
+			{
+				"name": "joined",
+				"type": "String"
+			},
+			{
+				"name": "contract_valid_until",
+				"type": "String"
+			},
+			{
+				"name": "nation_position",
+				"type": "String"
+			},
+			{
+				"name": "nation_jersey_number",
+				"type": "String"
+			},
+			{
+				"name": "pace",
+				"type": "String"
+			},
+			{
+				"name": "shooting",
+				"type": "String"
+			},
+			{
+				"name": "passing",
+				"type": "String"
+			},
+			{
+				"name": "dribbling",
+				"type": "String"
+			},
+			{
+				"name": "defending",
+				"type": "String"
+			},
+			{
+				"name": "physic",
+				"type": "String"
+			},
+			{
+				"name": "gk_diving",
+				"type": "String"
+			},
+			{
+				"name": "gk_handling",
+				"type": "String"
+			},
+			{
+				"name": "gk_kicking",
+				"type": "String"
+			},
+			{
+				"name": "gk_reflexes",
+				"type": "String"
+			},
+			{
+				"name": "gk_speed",
+				"type": "String"
+			},
+			{
+				"name": "gk_positioning",
+				"type": "String"
+			},
+			{
+				"name": "player_traits",
+				"type": "String"
+			},
+			{
+				"name": "attacking_crossing",
+				"type": "String"
+			},
+			{
+				"name": "attacking_finishing",
+				"type": "String"
+			},
+			{
+				"name": "attacking_heading_accuracy",
+				"type": "String"
+			},
+			{
+				"name": "attacking_short_passing",
+				"type": "String"
+			},
+			{
+				"name": "attacking_volleys",
+				"type": "String"
+			},
+			{
+				"name": "skill_dribbling",
+				"type": "String"
+			},
+			{
+				"name": "skill_curve",
+				"type": "String"
+			},
+			{
+				"name": "skill_fk_accuracy",
+				"type": "String"
+			},
+			{
+				"name": "skill_long_passing",
+				"type": "String"
+			},
+			{
+				"name": "skill_ball_control",
+				"type": "String"
+			},
+			{
+				"name": "movement_acceleration",
+				"type": "String"
+			},
+			{
+				"name": "movement_sprint_speed",
+				"type": "String"
+			},
+			{
+				"name": "movement_agility",
+				"type": "String"
+			},
+			{
+				"name": "movement_reactions",
+				"type": "String"
+			},
+			{
+				"name": "movement_balance",
+				"type": "String"
+			},
+			{
+				"name": "power_shot_power",
+				"type": "String"
+			},
+			{
+				"name": "power_jumping",
+				"type": "String"
+			},
+			{
+				"name": "power_stamina",
+				"type": "String"
+			},
+			{
+				"name": "power_strength",
+				"type": "String"
+			},
+			{
+				"name": "power_long_shots",
+				"type": "String"
+			},
+			{
+				"name": "mentality_aggression",
+				"type": "String"
+			},
+			{
+				"name": "mentality_interceptions",
+				"type": "String"
+			},
+			{
+				"name": "mentality_positioning",
+				"type": "String"
+			},
+			{
+				"name": "mentality_vision",
+				"type": "String"
+			},
+			{
+				"name": "mentality_penalties",
+				"type": "String"
+			},
+			{
+				"name": "mentality_composure",
+				"type": "String"
+			},
+			{
+				"name": "defending_marking",
+				"type": "String"
+			},
+			{
+				"name": "defending_standing_tackle",
+				"type": "String"
+			},
+			{
+				"name": "defending_sliding_tackle",
+				"type": "String"
+			},
+			{
+				"name": "goalkeeping_diving",
+				"type": "String"
+			},
+			{
+				"name": "goalkeeping_handling",
+				"type": "String"
+			},
+			{
+				"name": "goalkeeping_kicking",
+				"type": "String"
+			},
+			{
+				"name": "goalkeeping_positioning",
+				"type": "String"
+			},
+			{
+				"name": "goalkeeping_reflexes",
+				"type": "String"
+			},
+			{
+				"name": "ls",
+				"type": "String"
+			},
+			{
+				"name": "st",
+				"type": "String"
+			},
+			{
+				"name": "rs",
+				"type": "String"
+			},
+			{
+				"name": "lw",
+				"type": "String"
+			},
+			{
+				"name": "lf",
+				"type": "String"
+			},
+			{
+				"name": "cf",
+				"type": "String"
+			},
+			{
+				"name": "rf",
+				"type": "String"
+			},
+			{
+				"name": "rw",
+				"type": "String"
+			},
+			{
+				"name": "lam",
+				"type": "String"
+			},
+			{
+				"name": "cam",
+				"type": "String"
+			},
+			{
+				"name": "ram",
+				"type": "String"
+			},
+			{
+				"name": "lm",
+				"type": "String"
+			},
+			{
+				"name": "lcm",
+				"type": "String"
+			},
+			{
+				"name": "cm",
+				"type": "String"
+			},
+			{
+				"name": "rcm",
+				"type": "String"
+			},
+			{
+				"name": "rm",
+				"type": "String"
+			},
+			{
+				"name": "lwb",
+				"type": "String"
+			},
+			{
+				"name": "ldm",
+				"type": "String"
+			},
+			{
+				"name": "cdm",
+				"type": "String"
+			},
+			{
+				"name": "rdm",
+				"type": "String"
+			},
+			{
+				"name": "rwb",
+				"type": "String"
+			},
+			{
+				"name": "lb",
+				"type": "String"
+			},
+			{
+				"name": "lcb",
+				"type": "String"
+			},
+			{
+				"name": "cb",
+				"type": "String"
+			},
+			{
+				"name": "rcb",
+				"type": "String"
+			},
+			{
+				"name": "rb",
+				"type": "String"
+			}
+		]
+	}
+}

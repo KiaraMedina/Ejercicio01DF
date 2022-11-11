@@ -1,0 +1,19 @@
+{
+	"name": "adcls_raw",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lnk_adlsgen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "raw"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
