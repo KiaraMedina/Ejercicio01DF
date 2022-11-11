@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "dfejercicioOne"
 		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://castoragecount.dfs.core.windows.net/"
+		},
 		"lnk_ejercicio01_properties_typeProperties_baseUrl": {
 			"value": "https://KVejercicio1.vault.azure.net/"
 		},
