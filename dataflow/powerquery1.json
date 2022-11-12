@@ -13,7 +13,7 @@
 					}
 				}
 			],
-			"script": "section Section1;\r\nshared adcls_raw = let AdfDoc = AzureStorage.DataLakeContents(\"https://castoragecount.dfs.core.windows.net/raw/players_20.parquet\"), Parquet = Parquet.Document(AdfDoc) in Parquet;\r\nshared UserQuery = let Source = #\"adcls_raw\",\r\n  #\"Tipo de columna cambiado\" = Table.TransformColumnTypes(Source, {{\"age\", Int64.Type}, {\"dob\", type date}, {\"height_cm\", type number}, {\"weight_kg\", type number}, {\"overall\", Int64.Type}, {\"potential\", Int64.Type}}) in #\"Tipo de columna cambiado\";\r\n",
+			"script": "section Section1;\r\nshared adcls_raw = let AdfDoc = AzureStorage.DataLakeContents(\"https://castoragecount.dfs.core.windows.net/raw/players_20.parquet\"), Parquet = Parquet.Document(AdfDoc) in Parquet;\r\nshared UserQuery = let Source = #\"adcls_raw\",\r\n  #\"Tipo de columna cambiado\" = Table.TransformColumnTypes(Source, {{\"age\", Int64.Type}}) in #\"Tipo de columna cambiado\";\r\n",
 			"documentLocale": "en-us"
 		}
 	}
