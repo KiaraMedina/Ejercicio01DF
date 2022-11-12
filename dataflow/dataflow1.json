@@ -12,10 +12,30 @@
 					"name": "adlsRaw"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "adls_universal",
+						"type": "DatasetReference"
+					},
+					"name": "adlsUniversal"
+				}
+			],
 			"transformations": [
 				{
-					"name": "derivedColumn1"
+					"name": "CastColumn"
+				},
+				{
+					"name": "AddCurrentYear"
+				},
+				{
+					"name": "AddDateColumn"
+				},
+				{
+					"name": "FilterByEdad"
+				},
+				{
+					"name": "groupByAge"
 				}
 			],
 			"scriptLines": [
@@ -132,8 +152,21 @@
 				"     format: 'parquet') ~> adlsRaw",
 				"adlsRaw derive(age = toInteger(age),",
 				"          overall = toInteger(overall),",
-				"          potential = toInteger(potential),",
-				"          load_date = currentDate()) ~> derivedColumn1"
+				"          potential = toInteger(potential)) ~> CastColumn",
+				"AddDateColumn derive(current_year = year(load_date)) ~> AddCurrentYear",
+				"CastColumn derive(load_date = currentDate()) ~> AddDateColumn",
+				"AddCurrentYear filter(age > 25) ~> FilterByEdad",
+				"FilterByEdad aggregate(groupBy(age),",
+				"     potential_sum = sum(potential),",
+				"          overall_avg = avg(overall)) ~> groupByAge",
+				"groupByAge sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     format: 'parquet',",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> adlsUniversal"
 			]
 		}
 	}
