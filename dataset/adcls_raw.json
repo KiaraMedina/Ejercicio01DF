@@ -14,6 +14,423 @@
 			},
 			"compressionCodec": "snappy"
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "sofifa_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "player_url",
+				"type": "UTF8"
+			},
+			{
+				"name": "short_name",
+				"type": "UTF8"
+			},
+			{
+				"name": "long_name",
+				"type": "UTF8"
+			},
+			{
+				"name": "age",
+				"type": "UTF8"
+			},
+			{
+				"name": "dob",
+				"type": "UTF8"
+			},
+			{
+				"name": "height_cm",
+				"type": "UTF8"
+			},
+			{
+				"name": "weight_kg",
+				"type": "UTF8"
+			},
+			{
+				"name": "nationality",
+				"type": "UTF8"
+			},
+			{
+				"name": "club",
+				"type": "UTF8"
+			},
+			{
+				"name": "overall",
+				"type": "UTF8"
+			},
+			{
+				"name": "potential",
+				"type": "UTF8"
+			},
+			{
+				"name": "value_eur",
+				"type": "UTF8"
+			},
+			{
+				"name": "wage_eur",
+				"type": "UTF8"
+			},
+			{
+				"name": "player_positions",
+				"type": "UTF8"
+			},
+			{
+				"name": "preferred_foot",
+				"type": "UTF8"
+			},
+			{
+				"name": "international_reputation",
+				"type": "UTF8"
+			},
+			{
+				"name": "weak_foot",
+				"type": "UTF8"
+			},
+			{
+				"name": "skill_moves",
+				"type": "UTF8"
+			},
+			{
+				"name": "work_rate",
+				"type": "UTF8"
+			},
+			{
+				"name": "body_type",
+				"type": "UTF8"
+			},
+			{
+				"name": "real_face",
+				"type": "UTF8"
+			},
+			{
+				"name": "release_clause_eur",
+				"type": "UTF8"
+			},
+			{
+				"name": "player_tags",
+				"type": "UTF8"
+			},
+			{
+				"name": "team_position",
+				"type": "UTF8"
+			},
+			{
+				"name": "team_jersey_number",
+				"type": "UTF8"
+			},
+			{
+				"name": "loaned_from",
+				"type": "UTF8"
+			},
+			{
+				"name": "joined",
+				"type": "UTF8"
+			},
+			{
+				"name": "contract_valid_until",
+				"type": "UTF8"
+			},
+			{
+				"name": "nation_position",
+				"type": "UTF8"
+			},
+			{
+				"name": "nation_jersey_number",
+				"type": "UTF8"
+			},
+			{
+				"name": "pace",
+				"type": "UTF8"
+			},
+			{
+				"name": "shooting",
+				"type": "UTF8"
+			},
+			{
+				"name": "passing",
+				"type": "UTF8"
+			},
+			{
+				"name": "dribbling",
+				"type": "UTF8"
+			},
+			{
+				"name": "defending",
+				"type": "UTF8"
+			},
+			{
+				"name": "physic",
+				"type": "UTF8"
+			},
+			{
+				"name": "gk_diving",
+				"type": "UTF8"
+			},
+			{
+				"name": "gk_handling",
+				"type": "UTF8"
+			},
+			{
+				"name": "gk_kicking",
+				"type": "UTF8"
+			},
+			{
+				"name": "gk_reflexes",
+				"type": "UTF8"
+			},
+			{
+				"name": "gk_speed",
+				"type": "UTF8"
+			},
+			{
+				"name": "gk_positioning",
+				"type": "UTF8"
+			},
+			{
+				"name": "player_traits",
+				"type": "UTF8"
+			},
+			{
+				"name": "attacking_crossing",
+				"type": "UTF8"
+			},
+			{
+				"name": "attacking_finishing",
+				"type": "UTF8"
+			},
+			{
+				"name": "attacking_heading_accuracy",
+				"type": "UTF8"
+			},
+			{
+				"name": "attacking_short_passing",
+				"type": "UTF8"
+			},
+			{
+				"name": "attacking_volleys",
+				"type": "UTF8"
+			},
+			{
+				"name": "skill_dribbling",
+				"type": "UTF8"
+			},
+			{
+				"name": "skill_curve",
+				"type": "UTF8"
+			},
+			{
+				"name": "skill_fk_accuracy",
+				"type": "UTF8"
+			},
+			{
+				"name": "skill_long_passing",
+				"type": "UTF8"
+			},
+			{
+				"name": "skill_ball_control",
+				"type": "UTF8"
+			},
+			{
+				"name": "movement_acceleration",
+				"type": "UTF8"
+			},
+			{
+				"name": "movement_sprint_speed",
+				"type": "UTF8"
+			},
+			{
+				"name": "movement_agility",
+				"type": "UTF8"
+			},
+			{
+				"name": "movement_reactions",
+				"type": "UTF8"
+			},
+			{
+				"name": "movement_balance",
+				"type": "UTF8"
+			},
+			{
+				"name": "power_shot_power",
+				"type": "UTF8"
+			},
+			{
+				"name": "power_jumping",
+				"type": "UTF8"
+			},
+			{
+				"name": "power_stamina",
+				"type": "UTF8"
+			},
+			{
+				"name": "power_strength",
+				"type": "UTF8"
+			},
+			{
+				"name": "power_long_shots",
+				"type": "UTF8"
+			},
+			{
+				"name": "mentality_aggression",
+				"type": "UTF8"
+			},
+			{
+				"name": "mentality_interceptions",
+				"type": "UTF8"
+			},
+			{
+				"name": "mentality_positioning",
+				"type": "UTF8"
+			},
+			{
+				"name": "mentality_vision",
+				"type": "UTF8"
+			},
+			{
+				"name": "mentality_penalties",
+				"type": "UTF8"
+			},
+			{
+				"name": "mentality_composure",
+				"type": "UTF8"
+			},
+			{
+				"name": "defending_marking",
+				"type": "UTF8"
+			},
+			{
+				"name": "defending_standing_tackle",
+				"type": "UTF8"
+			},
+			{
+				"name": "defending_sliding_tackle",
+				"type": "UTF8"
+			},
+			{
+				"name": "goalkeeping_diving",
+				"type": "UTF8"
+			},
+			{
+				"name": "goalkeeping_handling",
+				"type": "UTF8"
+			},
+			{
+				"name": "goalkeeping_kicking",
+				"type": "UTF8"
+			},
+			{
+				"name": "goalkeeping_positioning",
+				"type": "UTF8"
+			},
+			{
+				"name": "goalkeeping_reflexes",
+				"type": "UTF8"
+			},
+			{
+				"name": "ls",
+				"type": "UTF8"
+			},
+			{
+				"name": "st",
+				"type": "UTF8"
+			},
+			{
+				"name": "rs",
+				"type": "UTF8"
+			},
+			{
+				"name": "lw",
+				"type": "UTF8"
+			},
+			{
+				"name": "lf",
+				"type": "UTF8"
+			},
+			{
+				"name": "cf",
+				"type": "UTF8"
+			},
+			{
+				"name": "rf",
+				"type": "UTF8"
+			},
+			{
+				"name": "rw",
+				"type": "UTF8"
+			},
+			{
+				"name": "lam",
+				"type": "UTF8"
+			},
+			{
+				"name": "cam",
+				"type": "UTF8"
+			},
+			{
+				"name": "ram",
+				"type": "UTF8"
+			},
+			{
+				"name": "lm",
+				"type": "UTF8"
+			},
+			{
+				"name": "lcm",
+				"type": "UTF8"
+			},
+			{
+				"name": "cm",
+				"type": "UTF8"
+			},
+			{
+				"name": "rcm",
+				"type": "UTF8"
+			},
+			{
+				"name": "rm",
+				"type": "UTF8"
+			},
+			{
+				"name": "lwb",
+				"type": "UTF8"
+			},
+			{
+				"name": "ldm",
+				"type": "UTF8"
+			},
+			{
+				"name": "cdm",
+				"type": "UTF8"
+			},
+			{
+				"name": "rdm",
+				"type": "UTF8"
+			},
+			{
+				"name": "rwb",
+				"type": "UTF8"
+			},
+			{
+				"name": "lb",
+				"type": "UTF8"
+			},
+			{
+				"name": "lcb",
+				"type": "UTF8"
+			},
+			{
+				"name": "cb",
+				"type": "UTF8"
+			},
+			{
+				"name": "rcb",
+				"type": "UTF8"
+			},
+			{
+				"name": "rb",
+				"type": "UTF8"
+			}
+		]
 	}
 }
